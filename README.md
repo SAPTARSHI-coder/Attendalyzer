@@ -1,4 +1,4 @@
-# 🎓 Automated Student Attendance Reconciliation System
+# 🎓 Attendalyzer: Automated Student Attendance Reconciliation System
 
 > An AI-powered, audit-ready data pipeline that performs high-accuracy OCR on UMS screenshots, reconciles self-reported medical and event participation claims, applies institutional business logic, and produces a structured, color-coded Excel report for debarment analysis.
 
