@@ -1,5 +1,10 @@
 # 🎓 Attendalyzer: Automated Student Attendance Reconciliation System
 
+![Python](https://img.shields.io/badge/python-3.9+-blue.svg?style=flat-square&logo=python&logoColor=white)
+![Google Gemini](https://img.shields.io/badge/Powered%20by-Google%20Gemini-orange.svg?style=flat-square)
+![Pandas](https://img.shields.io/badge/Data%20Processing-Pandas-150458.svg?style=flat-square&logo=pandas)
+![Status](https://img.shields.io/badge/Status-Active-brightgreen.svg?style=flat-square)
+
 > An AI-powered, audit-ready data pipeline that performs high-accuracy OCR on UMS screenshots, reconciles self-reported medical and event participation claims, applies institutional business logic, and produces a structured, color-coded Excel report for debarment analysis.
 
 ---
