@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.env
+
+# User Data & Uploads
+Any attendance missed but you are present_ (provide ss that you are present that day in other classes) (File responses)/
+Events participation details with date (certificates-proof) (File responses)/
+Upload UMS Attendance Screenshot-Report (Mandatory) (File responses)/
+
+# Caches
+ocr_cache.json
+ocr_cache_v2.json
+
+# Outputs
+*.xlsx
