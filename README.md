@@ -6,26 +6,26 @@
 
 ## 📋 Table of Contents
 
-1. [Overview](#overview)
-2. [Problem Statement](#problem-statement)
-3. [System Architecture](#system-architecture)
-4. [Project Structure](#project-structure)
-5. [Data Sources](#data-sources)
-6. [Scripts — Detailed Reference](#scripts--detailed-reference)
-7. [Business Logic](#business-logic)
-8. [Output Files](#output-files)
-9. [Color Coding Reference](#color-coding-reference)
-10. [Setup & Installation](#setup--installation)
-11. [Running the Pipeline](#running-the-pipeline)
-12. [Configuration & Manual Overrides](#configuration--manual-overrides)
-13. [Subjects Reference](#subjects-reference)
-14. [Caching Architecture](#caching-architecture)
-15. [Troubleshooting](#troubleshooting)
-16. [Dependencies](#dependencies)
+1. [📖 Overview](#overview)
+2. [🛑 Problem Statement](#problem-statement)
+3. [🏗️ System Architecture](#system-architecture)
+4. [📁 Project Structure](#project-structure)
+5. [🗄️ Data Sources](#data-sources)
+6. [💻 Scripts — Detailed Reference](#scripts--detailed-reference)
+7. [🧠 Business Logic](#business-logic)
+8. [📊 Output Files](#output-files)
+9. [🎨 Color Coding Reference](#color-coding-reference)
+10. [🚀 Setup & Installation](#setup--installation)
+11. [🏃 Running the Pipeline](#running-the-pipeline)
+12. [⚙️ Configuration & Manual Overrides](#configuration--manual-overrides)
+13. [📚 Subjects Reference](#subjects-reference)
+14. [💾 Caching Architecture](#caching-architecture)
+15. [🔧 Troubleshooting](#troubleshooting)
+16. [📦 Dependencies](#dependencies)
 
 ---
 
-## Overview
+## 📖 Overview
 
 This project automates the end-of-semester attendance debarment process for a B.Tech 4th Semester cohort. Instead of manually reviewing hundreds of UMS (University Management System) screenshots and cross-checking student claims, this pipeline:
 
@@ -37,7 +37,7 @@ This project automates the end-of-semester attendance debarment process for a B.
 
 ---
 
-## Problem Statement
+## 🛑 Problem Statement
 
 At semester end, students who fall below a certain attendance threshold are "debarred" from exams:
 
@@ -56,7 +56,7 @@ Manually reconciling all of this for an entire batch was the bottleneck this sys
 
 ---
 
-## System Architecture
+## 🏗️ System Architecture
 
 ```
 ┌─────────────────────────────────────────────────────────────────────┐
@@ -103,7 +103,7 @@ Manually reconciling all of this for an entire batch was the bottleneck this sys
 
 ---
 
-## Project Structure
+## 📁 Project Structure
 
 ```
 attendance/
@@ -161,7 +161,7 @@ attendance/
 
 ---
 
-## Data Sources
+## 🗄️ Data Sources
 
 ### 1. Google Form Responses Excel
 **File:** `B.Tech 4th Semester Attendance Collection (Debarred List) (Responses) (1).xlsx`
@@ -202,7 +202,7 @@ Supported formats: `.jpg`, `.jpeg`, `.png`, `.webp`, `.gif`, `.bmp`, `.pdf`
 
 ---
 
-## Scripts — Detailed Reference
+## 💻 Scripts — Detailed Reference
 
 ---
 
@@ -314,7 +314,7 @@ For each student in attendance.xlsx:
 
 ---
 
-## Business Logic
+## 🧠 Business Logic
 
 ### 1. Missed Attendance Grant Rule
 
@@ -393,7 +393,7 @@ Add entries here when an admin decision overrides the automated grant logic.
 
 ---
 
-## Output Files
+## 📊 Output Files
 
 ### `Attendance_Matrix_FINAL_v6.xlsx` *(Primary Output)*
 
@@ -412,7 +412,7 @@ Add entries here when an admin decision overrides the automated grant logic.
 
 ---
 
-## Color Coding Reference
+## 🎨 Color Coding Reference
 
 ### Percentage Cells (P- and Corr P-)
 
@@ -435,7 +435,7 @@ Add entries here when an admin decision overrides the automated grant logic.
 
 ---
 
-## Setup & Installation
+## 🚀 Setup & Installation
 
 ### Prerequisites
 
@@ -468,7 +468,7 @@ The scripts read the Gemini API key from an environment variable. Do not hardcod
 
 ---
 
-## Running the Pipeline
+## 🏃 Running the Pipeline
 
 ### Step 1 — Run OCR to populate the cache
 
@@ -517,7 +517,7 @@ python check_cache.py
 
 ---
 
-## Configuration & Manual Overrides
+## ⚙️ Configuration & Manual Overrides
 
 ### Adding Manual Attendance Grants
 
@@ -553,7 +553,7 @@ In `build_excel_v5.py`, find `SUBJ_KEYWORDS` and add entries:
 
 ---
 
-## Subjects Reference
+## 📚 Subjects Reference
 
 | Subject Code | Short Name | Full Name |
 |-------------|-----------|-----------|
@@ -572,7 +572,7 @@ In `build_excel_v5.py`, find `SUBJ_KEYWORDS` and add entries:
 
 ---
 
-## Caching Architecture
+## 💾 Caching Architecture
 
 The pipeline uses a **two-version cache** system:
 
@@ -589,7 +589,7 @@ The pipeline uses a **two-version cache** system:
 
 ---
 
-## Troubleshooting
+## 🔧 Troubleshooting
 
 ### "FILE NOT FOUND" for a student
 
@@ -643,7 +643,7 @@ python build_excel_v5.py
 
 ---
 
-## Dependencies
+## 📦 Dependencies
 
 | Package | Version | Purpose |
 |---------|---------|---------|
@@ -657,7 +657,7 @@ python build_excel_v5.py
 
 ---
 
-## Version History
+## 🕒 Version History
 
 | Version | Script | Key Change |
 |---------|--------|-----------|
@@ -670,7 +670,7 @@ python build_excel_v5.py
 
 ---
 
-## Author Notes
+## ✍️ Author Notes
 
 - This system was built iteratively across a single working session to meet an institutional deadline.
 - The OCR accuracy depends entirely on screenshot quality — blurry, cropped, or rotated images will produce 0s.
@@ -680,4 +680,3 @@ python build_excel_v5.py
 ---
 
 *Generated for B.Tech 4th Semester — Department of Computer Science & Engineering*
-"# Attendalyzer" 
